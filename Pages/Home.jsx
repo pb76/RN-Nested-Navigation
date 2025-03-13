@@ -8,8 +8,8 @@ export default function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Hem</Text>
-      <Button onPress={() => navigation.navigate("Jokes")}>Navigera till Skämt-sidan</Button>
-      <Button onPress={() => navigation.navigate("About")}>Navigera till Om-sidan</Button>
+      {/* <Button onPress={() => navigation.navigate("Jokes")}>Navigera till Skämt-sidan</Button>
+      <Button onPress={() => navigation.navigate("About")}>Navigera till Om-sidan</Button> */}
     </View>
   );
 }

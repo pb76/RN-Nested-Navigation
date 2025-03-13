@@ -8,7 +8,7 @@ export default function AboutScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text>Om</Text>
-      <Button onPress={() => navigation.navigate("Home")}>Gå till Hemskärmen</Button>
+      {/* <Button onPress={() => navigation.navigate("Home")}>Gå till Hemskärmen</Button> */}
     </View>
   );
 }
