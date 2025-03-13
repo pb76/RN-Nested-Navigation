@@ -7,7 +7,6 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 
 import HomeScreen from "./Pages/Home";
 import AboutScreen from "./Pages/About";
-/* import JokesScreen from "./Pages/Jokes"; */
 import JokesListScreen from "./Pages/Jokes-List";
 import JokesDetailScreen from "./Pages/Jokes-Detail";
 
