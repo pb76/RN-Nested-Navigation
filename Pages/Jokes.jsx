@@ -1,14 +1,31 @@
-import { useNavigation } from "@react-navigation/native";
-import { Button } from "@react-navigation/elements";
+import { createStaticNavigation } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Text, View } from "react-native";
 
-export default function JokesScreen() {
-  const navigation = useNavigation();
-
+function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Skämt</Text>
-      {/* <Button onPress={() => navigation.navigate("Home")}>Gå till Hemskärmen</Button> */}
+      <Text>Home Screen</Text>
     </View>
   );
 }
+
+const RootStack = createNativeStackNavigator({
+  screens: {
+    Home: HomeScreen,
+  },
+});
+
+const Navigation = createStaticNavigation(RootStack);
+
+export default function JokesScreen() {
+  return <Navigation />;
+}
+
+/* export default function JokesScreen() {
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Text>Skämt</Text>
+    </View>
+  );
+} */
